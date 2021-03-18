@@ -10,6 +10,8 @@ cd web_crawler
 
 bundle install
 
+yarn install
+
 rake db:create
 
 Start the server - rails s
