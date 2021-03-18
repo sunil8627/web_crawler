@@ -1,24 +1,17 @@
-# README
+Ruby version - 2.7.2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails version - 6.1.1
 
-Things you may want to cover:
+Steps to run app - 
 
-* Ruby version
+git clone https://github.com/sunil8627/web_crawler.git
 
-* System dependencies
+cd web_crawler
 
-* Configuration
+bundle install
 
-* Database creation
+rake db:create
 
-* Database initialization
+Start the server - rails s
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Go to http://localhost:3000/
