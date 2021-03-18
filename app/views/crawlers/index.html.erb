@@ -1,0 +1,16 @@
+<p class="red"><%= flash[:notice] %></p>
+
+<h2> Enter url to crawl </h2>
+
+<%= form_tag crawl_data_crawlers_path do %>
+ 
+   <div class="form-group">
+    <p> Ex: http://bbc.co.uk </p>
+    <%= text_field_tag :url, '', :required => true %>
+   </div>
+
+   <div class="actions">
+    <%= submit_tag "Submit", :class => "btn btn-primary" %>
+   </div>
+
+<% end %>

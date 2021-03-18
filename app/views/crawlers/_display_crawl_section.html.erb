@@ -1,0 +1,20 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col"> <%= sub_array[0] %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+       <% sub_array[1].each do |val| %>
+         <% if sub_array[0] == "Links" %> 
+           <%= link_to val, crawl_data_crawlers_path(url: val) %> <br />
+         <% else %>
+           <%= val %> <br />
+         <% end %> 
+       <% end %>
+      </td>
+    </tr>
+  </tbody>
+</table>

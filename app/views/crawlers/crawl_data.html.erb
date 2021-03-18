@@ -1,0 +1,5 @@
+<h2> Crawled data for the url: <%= @url %> </h2>
+
+<% @crawled_data.each do |sub_array| %>
+  <%= render "display_crawl_section", sub_array: sub_array %>
+<% end %>
